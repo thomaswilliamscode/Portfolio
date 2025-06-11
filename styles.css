@@ -1,7 +1,40 @@
 /* Global Styles */
-body{
-
+@font-face {
+    font-family: 'ChalkboardSE';
+    src: url('./fonts/ChalkboardSE-Regular-02_0.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'ChalkboardSE';
+    src: url('./fonts/ChalkboardSE-Light-01_0.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChalkboardSE';
+    src: url('./fonts/ChalkboardSE-Bold-03_0.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ChalkboardSE', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: #181A1C;
+}
+
+h2, h3 {
+    font-weight: 700;
+}
+
+.tagline {
+    font-weight: 300;
+}
+
 
 main {
     color:aqua;
@@ -45,7 +78,29 @@ header {
     flex-direction: row;
     list-style-type: none;
     margin-right: 2rem;
+    margin-top:5%;
 }
+
+#nav li{
+    text-decoration: none;
+    background-color: #111;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #3391FF;
+    padding: 0 1rem;
+}
+
+#nav li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
+}
+
 
 /* main Styles */
 
