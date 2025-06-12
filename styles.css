@@ -150,12 +150,14 @@ header {
 
 .project {
     width: 20%;
+    text-decoration: none;
     background-color: #111;
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .project:hover {
     transform: translateY(-5px);
