@@ -294,6 +294,53 @@ header {
     box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
 }
 
+/* Detailed Project Page Styles*/
+
+.project-name {
+    text-align: center;
+}
+
+#project-top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.project-top-left {
+    width: 50%;
+    display: flex;
+}
+
+.project-btn {
+    padding: 0 0.25rem;
+    font-size: 2.5rem;
+    margin: 0 0.2rem;
+}
+
+.project-btn:hover {
+    cursor: pointer;
+}
+
+#project-screenshot{
+    width: 100%;
+}
+
+.project-top-right {
+    padding-left: 1rem;
+    width: 40%;
+    margin-left: 10%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+.project-tech-stack span{
+    margin: 0 1%;
+    background-color: rgba(0, 128, 128, 0.802);
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
 
 
 /* Footer Styles */
