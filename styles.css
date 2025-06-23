@@ -37,7 +37,7 @@ h2, h3 {
 
 
 main {
-    color:aqua;
+    color:#E0DFDC;
     width: 80%;
     margin: auto;
 }
@@ -47,6 +47,11 @@ h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
+
+h1, h2, h3, blockquote {
+    color: aqua;
+}
+
 
 section {
     margin-bottom: 5rem;
@@ -112,14 +117,22 @@ header {
 }
 
 #first-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem 0;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  box-shadow:
+    0 0 0 2px #00ffffaa,       /* soft border glow */
+    0 0 15px #00ffff33,        /* outer aqua halo */
+    0 0 30px #00ffff22 inset;  /* optional inner glow */
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
 }
+
+
 
 #first-section p {
     text-shadow: 1px 1px 2px #161f1b, 0 0 5px #155a5a;
@@ -182,11 +195,13 @@ header {
     max-width: 600px;
     margin: 5rem auto;
     padding: 2rem;
-    background-color: #111;
+    background-color: #1F1F1F;
     border-radius: 1rem;
     color: white;
     box-shadow: 0 0 15px rgba(0,255,255,0.2);
 }
+
+
 
 #contact h2 {
     text-align: center;
@@ -224,6 +239,10 @@ header {
     background-color: #00dddd;
 }
 
+.contact-p {
+    color: aqua;
+}
+
 
 /* Project Page Styles */
 
@@ -248,16 +267,16 @@ header {
 }
 
 .project-page-tech-stack {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 2rem -2.2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
+
 .project-page-tech-stack li{
-    background-color: #3d939385; /* translucent aqua */
-    color: aqua;
+    background-color: #1E3A3C; /* translucent aqua */
+    color: #E0DFDC;
     padding: 0.4rem 0.75rem;
     border-radius: 999px; /* makes the bubble! */
     font-size: 0.9rem;
@@ -341,6 +360,22 @@ header {
     border-radius: 1rem;
 }
 
+/* About Page Styles */
+#about-page {
+    margin: 0 auto;
+    width: 70%;
+}
+#about-page .bold{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#about-title {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
 
 
 /* Footer Styles */
@@ -387,3 +422,216 @@ footer p {
 footer a:hover {
     animation: linkPulse 1s infinite;
 }
+
+
+/* Responsive design */
+
+
+/* Tablet & below */
+@media (max-width: 1024px) {
+ * { 
+    box-sizing: border-box; 
+    }
+    nav {
+        width: 100%;
+    }
+main {
+    width: 100%;
+}
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+  #first-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #self-pic {
+    max-width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  #about-me {
+    width: 80%;
+  }
+
+  #projects-holder {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+#project-page-section {
+    width: 80%;
+    margin: 0 auto;
+}
+#project-page-section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+
+.project-page-article {
+    display: flex;
+    background-color: #15293b2e;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.project-page-div1, .project-page-div2 {
+    width: 40%;
+}
+
+.project-page-tech-stack {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 80%;
+}
+
+
+.project-page-tech-stack li{
+    background-color: #1E3A3C; /* translucent aqua */
+    color: #E0DFDC;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px; /* makes the bubble! */
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #00ffff55;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-page-div2 {
+    margin-top: 5%;
+}
+
+.project-page-img {
+    width: 80%;
+}
+
+.project-page-btn {
+    background-color: #111;
+    display: inline-block;
+    color: #3391FF;
+    padding: 1rem 1.4rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.project-page-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
+}
+
+  .project {
+    width: 80%;
+  }
+}
+
+/* Phone & below */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  #nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+  #hello-world {
+    font-size: 1.2rem;
+  }
+
+  #self-pic {
+    max-width: 80%;
+  }
+
+  #about-me {
+    width: 100%;
+  }
+}
+
+/* Ultra-small phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+  main{
+  }
+
+  #nav {
+    gap: 0.2rem;
+    flex-wrap: nowrap;
+    margin-left: 15%;
+  }
+
+  #nav li {
+    padding: 0.25rem;
+    font-size: 0.5rem;
+  }
+
+
+  .project-page-article {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+
+  .project {
+    width: 100%;
+  }
+
+  .project-page-div1 {
+    margin-top: 5rem;
+    order:2;
+  }
+
+  .project-page-div1 h3{
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .project-page-tech-stack li {
+    font-size: 0.5rem;
+    
+  }
+
+  .project-page-btn {
+    padding: 0.25rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .project-page-img {
+    width: 100%;
+    order: 1;
+  }
+
+  #contact {
+    padding: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+}
+
