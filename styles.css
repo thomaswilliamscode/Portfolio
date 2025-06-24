@@ -433,6 +433,14 @@ footer a:hover {
 }
     nav {
         width: 100%;
+        
+    }
+    #projects-container{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    #nav li{
+        margin: 0 auto;
     }
     main {
         width: 90%;
@@ -567,14 +575,16 @@ footer a:hover {
     width: 90%;
 }
     .project-top-left {
-        width: 90%;
+        width: 100%;
         display: flex;
         margin-bottom: 2rem;
+        margin-left: 2rem;
+
     }
 
     .project-top-right {
         width: 90%;
-        margin-right: 3rem;
+        margin-right: 3.5rem;
     }
 
     .project-middle {
