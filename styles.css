@@ -787,3 +787,53 @@ footer a:hover {
   }
 }
 
+@media (max-width: 320px) {
+
+    header {
+        width: 100%;
+    }
+
+    #nav li a {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    }
+
+
+    .project-top-left {
+        width: 90%;
+        margin-right: 3rem;
+    }
+
+    .stack-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0.25rem;
+    }
+
+    .project-tech-stack span{
+        font-size: 1rem;
+        padding: 0 0.75rem;
+    }
+
+    .project-main {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .project-top-right{
+        margin-left: 3rem;
+        width: 98%;
+    }
+
+    .project-article{
+        margin-left: -2rem;
+        width: 97%;
+    }
+}
+
