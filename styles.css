@@ -425,6 +425,12 @@ footer a:hover {
 
 /* Responsive design */
 
+@media (max-width: 4000px) {
+    .project-page-tech-stack li{
+        width: 15%;
+    }
+}
+
 /* Big Screens*/
 @media (max-width: 2000px) {
     .project-page-tech-stack {
