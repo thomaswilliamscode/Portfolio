@@ -156,6 +156,11 @@ header {
 
 /* Home Styles */
 
+#projects-container h2 {
+    margin-left: 9%;
+    margin-top: 4%;
+}
+
 #projects-holder {
     display: flex;
     justify-content: space-around; 
@@ -290,6 +295,28 @@ header {
     margin-top: 5%;
 }
 
+.view-site-btn{
+    display: block;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-left: 15%;
+    background-color: #111;
+    width:35%;
+    text-align: center;
+    color: #3391FF;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-site-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
+}
+
 .project-page-img {
     width: 80%;
 }
@@ -300,7 +327,6 @@ header {
     color: #3391FF;
     padding: 1rem 1.4rem;
     border-radius: 1rem;
-    font-size: 0.9rem;
     font-weight: 600;
     border: 1px solid #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -318,6 +344,7 @@ header {
 
 .project-name {
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #project-top-container {
@@ -360,11 +387,43 @@ header {
     border-radius: 1rem;
 }
 
+#project-page-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 85%;
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+
+#view-site-project-page-btn{
+    text-decoration: none;
+    display: block;
+    background-color: #111;
+    text-align: center;
+    color: #3391FF;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#view-site-project-page-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
+}
+
 .project-features{
     font-size: 1rem;
 }
 .project-features li{
     padding: 0.25rem 0;
+}
+
+#demo-container, .project-middle{
+    margin-top: 5%;
 }
 
 /* About Page Styles */
