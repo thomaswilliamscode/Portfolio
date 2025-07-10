@@ -8,17 +8,21 @@ const screenshot = document.getElementById('project-screenshot')
 
 const pics = {
   project1: [
-    './screenshots/Project1/all.png',
-    './screenshots/Project1/Gaming.png',
-    './screenshots/Project1/Music.png' 
+    'screenshots/Project1/pal 01.png',
+    'screenshots/Project1/index trailers.png',
+    'screenshots/Project1/jobs main banner.png',
+    'screenshots/Project1/jobs circle.png',
+    'screenshots/Project1/pitch your game banner.png',
+    'screenshots/Project1/pitch your game banner 2.png',
+    'screenshots/Project1/about us.png',
+    'screenshots/Project1/news.png',
   ],
   project2: [
     './screenshots/Project2/gpt.png',
     './screenshots/Project2/mdn.png',
-    './screenshots/Project2/vscode.png' 
+    './screenshots/Project2/vscode.png',
   ],
-  
-}
+};
 
 let index = 0;
 let projectId = '';
@@ -37,7 +41,7 @@ function picsIndex () {
     case -1:
       index = 2;
       break;
-    case 3:
+    case 8:
       index = 0;
       break;
   }

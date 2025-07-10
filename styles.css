@@ -256,7 +256,7 @@ header {
     display: flex;
     background-color: #15293b2e;
     justify-content: space-around;
-    height: 500px;
+    height: auto;
     align-items: center;
     border-radius: 1rem;
     margin-bottom: 3rem;
@@ -305,6 +305,7 @@ header {
     border: 1px solid #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 0.5rem;
+    margin-bottom: 2rem;
     font-size: 1.3rem;
     text-decoration: none;
 }
@@ -353,10 +354,17 @@ header {
 }
 
 .project-tech-stack span{
-    margin: 0 1%;
+    margin: 0 0.25%;
     background-color: rgba(0, 128, 128, 0.802);
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 1rem;
+}
+
+.project-features{
+    font-size: 1rem;
+}
+.project-features li{
+    padding: 0.25rem 0;
 }
 
 /* About Page Styles */
