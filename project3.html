@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>TikTok Command Center</title>
+</head>
+<body>
+  <header>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main class="project-main">
+    <h1 class="project-name">Todo App (React + TS) </h1>
+    <div id="project-top-container">
+      <div class="project-top-left">
+        <button class="project-btn" id="project1-left"><</button>
+        <img id="project-screenshot" src="" alt="">
+        <button class="project-btn" id="project1-right">></button>
+      </div>
+      <div class="project-top-right">
+        <div class="project-tech-stack">
+          <h3>Tech Stack</h3>
+          <div class="stack-items">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Vite</span>
+            <span>React Router</span>
+            <span>Context</span>
+            <span>LocalStorage</span>
+          </div>
+        </div>
+        <div class="project-features">
+          <ul>
+            <li>Task management with folders + lists</li>
+            <li>Clickable sidebar with URL-driven active view</li>
+            <li>Add, delete, and skip todos</li>
+            <li>Persistent state in localStorage</li>
+            <li>Context API for shared state</li>
+            <li>Responsive layout with React Router navigation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="project-page-btn-div">
+      <a id="view-site-project-page-btn" target="_blank" href="https://thomaswilliamscode.github.io/Palworld-Copy-Site/">View Live Site</a>
+    </div>
+
+    <div id="description-container">
+      <h3>Project Overview</h3>
+      <p>The TikTok Command Center is a productivity dashboard for creators. It helps plan, script, and track TikTok content using a streamlined, tag-based system.
+
+      Features include voice script generation (via ElevenLabs), posting schedule management, analytics snapshot, and auto-tracking post ideas across content categories.
+
+      This project is being built with React, Supabase (for database and auth), and TailwindCSS for sleek, responsive UI.
+
+      Coming soon — but built with creators like me in mind.</p>
+    </div>
+    <div id="demo-container">
+      <h3>Demo Video</h3>
+      <img class='demo-pic' src="./pics/coming-soon.png"/>
+    </div>
+
+    <div class="project-middle">
+      <div class="project-future">
+        <article class="project-article">
+          <h3>Future Improvements / What I would change</h3>
+          <ul>
+            <li>Add recurring task support</li>
+            <li>Add folders/lists (UI built, function pending)</li>
+            <li>Drag-and-drop list + task reordering</li>
+            <li>Inline todo editing</li>
+            <li>Search + filter tasks</li>
+            <li>Theming (dark/light) with localStorage</li>
+            <li> Supabase integration (auth + sync across devices)</li>
+          </ul>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+        <div id="footer-content">
+            <p>&copy; 2025 Thomas Williams. All rights reserved.</p>
+            <p>Reach out: <a href="mailto:thomas.williams.code@gmail.com"><i class="fa-solid fa-envelope"></i> thomas.williams.code@gmail.com</a></p>
+            <p><a href="https://github.com/thomaswilliamscode" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a> | <a href="https://www.linkedin.com/in/thomas-williams-code/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </p>
+            <a href="#top">Back to top ↑</a>
+        </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
