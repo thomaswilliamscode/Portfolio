@@ -340,6 +340,7 @@ header {
     text-decoration: none;
     margin-top: 3rem;
     margin-left: 15%;
+    margin-bottom: 3rem;
     background-color: #111;
     width:35%;
     text-align: center;
@@ -472,6 +473,10 @@ header {
 
 #demo-container, .project-middle{
     margin-top: 5%;
+}
+
+#demo-container img.demo-pic {
+    height: 25rem;
 }
 
 /* About Page Styles */

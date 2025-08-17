@@ -18,9 +18,14 @@ const pics = {
     'screenshots/Project1/news.png',
   ],
   project2: [
-    './screenshots/Project2/gpt.png',
-    './screenshots/Project2/mdn.png',
-    './screenshots/Project2/vscode.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
+    './pics/coming-soon.png',
   ],
 };
 
