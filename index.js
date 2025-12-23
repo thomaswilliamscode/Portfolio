@@ -18,14 +18,14 @@ const pics = {
     'screenshots/Project1/news.png',
   ],
   project2: [
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
-    './pics/coming-soon.png',
+    'screenshots/Project2/todo-inbox.png',
+    'screenshots/Project2/focus-page.png',
+    'screenshots/Project2/folder-page.png',
+    'screenshots/Project2/todo-inbox.png',
+    'screenshots/Project2/focus-page.png',
+    'screenshots/Project2/folder-page.png',
+    'screenshots/Project2/todo-inbox.png',
+    'screenshots/Project2/focus-page.png',
   ],
 };
 
